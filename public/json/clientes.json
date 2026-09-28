@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "preco": 15000,
+    "prioridade": 3,
+    "etapa": 1,
+    "dataAbertura": "2026-06-10T10:00:00Z",
+    "responsavelEmail": "consultor1@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Venda",
+    "observacoes": "Cliente interessado em descarte em grande escala de placas de circuito.",
+    "requisitos": "Necessita de certificado de destruição de dados (banco de dados).",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 101, "dataAlteracao": "2026-06-10T10:00:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "TechSolutions LTDA",
+      "nomeFantasia": "TechSolutions",
+      "documento": "12.345.678/0001-99",
+      "nomeContato": "Carlos Mendes",
+      "funcaoContato": "Gerente de TI",
+      "email": "carlos.mendes@techsolutions.com",
+      "telefone": "(11) 98765-4321",
+      "endereco": "Av. Paulista, 1000 - São Paulo/SP"
+    }
+  },
+  {
+    "id": 2,
+    "preco": 8500,
+    "prioridade": 2,
+    "etapa": 1,
+    "dataAbertura": "2026-06-10T10:15:00Z",
+    "responsavelEmail": "consultor2@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Compra",
+    "observacoes": "Solicitou orçamento para coleta periódica de sucata eletrônica.",
+    "requisitos": "Checklist de conformidade ambiental exigido.",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 102, "dataAlteracao": "2026-06-10T10:15:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "InovaEletron S.A.",
+      "nomeFantasia": "InovaEletron",
+      "documento": "98.765.432/0001-10",
+      "nomeContato": "Juliana Costa",
+      "funcaoContato": "Coordenadora de Compras",
+      "email": "juliana.costa@inovaeletron.com",
+      "telefone": "(21) 91234-5678",
+      "endereco": "Rua das Indústrias, 200 - Rio de Janeiro/RJ"
+    }
+  },
+  {
+    "id": 3,
+    "preco": 5200,
+    "prioridade": 1,
+    "etapa": 1,
+    "dataAbertura": "2026-06-10T10:30:00Z",
+    "responsavelEmail": "consultor3@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Serviço",
+    "observacoes": "Busca parceria local para logística reversa de cartuchos.",
+    "requisitos": "Coleta semanal com relatório de volumes.",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 103, "dataAlteracao": "2026-06-10T10:30:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Recicla Mais",
+      "nomeFantasia": "Recicla Mais",
+      "documento": "123.456.789-00",
+      "nomeContato": "Fernanda Lima",
+      "funcaoContato": "Gerente de Sustentabilidade",
+      "email": "fernanda.lima@reciclamais.com",
+      "telefone": "(11) 99876-5432",
+      "endereco": "Av. Verde, 500 - Campinas/SP"
+    }
+  },
+  {
+    "id": 4,
+    "preco": 12300,
+    "prioridade": 2,
+    "etapa": 2,
+    "dataAbertura": "2026-06-10T11:00:00Z",
+    "responsavelEmail": "consultor1@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Venda",
+    "observacoes": "Contato inicial feito, aguardando envio de especificações técnicas.",
+    "requisitos": "Aprovação do setor técnico para propostas acima de R$10.000.",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 104, "dataAlteracao": "2026-06-10T11:00:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "GreenTech Soluções",
+      "nomeFantasia": "GreenTech",
+      "documento": "22.333.444/0001-55",
+      "nomeContato": "Ricardo Alves",
+      "funcaoContato": "Diretor de Operações",
+      "email": "ricardo.alves@greentech.com",
+      "telefone": "(31) 97654-3210",
+      "endereco": "Av. das Palmeiras, 250 - Belo Horizonte/MG"
+    }
+  },
+  {
+    "id": 5,
+    "preco": 9800,
+    "prioridade": 3,
+    "etapa": 2,
+    "dataAbertura": "2026-06-10T11:20:00Z",
+    "responsavelEmail": "consultor2@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Venda",
+    "observacoes": "Cliente com possibilidade de contrato anual.",
+    "requisitos": "Seguro de transporte exigido; atestado técnico anual.",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 105, "dataAlteracao": "2026-06-10T11:20:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "EcoEquipamentos",
+      "nomeFantasia": "EcoEquip",
+      "documento": "33.444.555/0001-66",
+      "nomeContato": "Mariana Santos",
+      "funcaoContato": "Compradora Sênior",
+      "email": "mariana.santos@ecoequip.com",
+      "telefone": "(41) 93456-7890",
+      "endereco": "Rod. do Comércio, 45 - Curitiba/PR"
+    }
+  },
+  {
+    "id": 6,
+    "preco": 7600,
+    "prioridade": 2,
+    "etapa": 2,
+    "dataAbertura": "2026-06-10T11:45:00Z",
+    "responsavelEmail": "consultor3@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Serviço",
+    "observacoes": "Precisa de demonstração operacional antes de fechar contrato.",
+    "requisitos": "Visita técnica in-loco para validar capacidade logística.",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 106, "dataAlteracao": "2026-06-10T11:45:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Sustentec Consultoria",
+      "nomeFantasia": "Sustentec",
+      "documento": "44.555.666/0001-77",
+      "nomeContato": "Bruno Oliveira",
+      "funcaoContato": "Consultor Chefe",
+      "email": "bruno.oliveira@sustentec.com",
+      "telefone": "(85) 98877-6655",
+      "endereco": "Av. do Parque, 10 - Fortaleza/CE"
+    }
+  },
+  {
+    "id": 7,
+    "preco": 20000,
+    "prioridade": 3,
+    "etapa": 3,
+    "dataAbertura": "2026-06-10T13:10:00Z",
+    "responsavelEmail": "consultor1@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Venda",
+    "observacoes": "Reunião agendada para apresentar proposta técnica e comercial.",
+    "requisitos": "Fornecer planta e estimativa de volumes antes da reunião.",
+    "deleted": 0,
+    "agendamentos": [
+      { "status": "Agendada", "dataHora": "2026-06-15T09:00:00Z", "observacoes": "Apresentação da solução e levantamento de volumes" },
+      { "status": "Realizada", "dataHora": "2026-06-16T09:30:00Z", "observacoes": "Reunião de apresentação; cliente pediu cotação detalhada" }
+    ],
+    "historico": [
+      { "id": 107, "dataAlteracao": "2026-06-10T13:10:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Eletronic Waste Corp",
+      "nomeFantasia": "EWaste",
+      "documento": "55.666.777/0001-88",
+      "nomeContato": "Lucas Ferreira",
+      "funcaoContato": "Coordenador de Logística",
+      "email": "lucas.ferreira@ewaste.com",
+      "telefone": "(11) 97600-1122",
+      "endereco": "Cais do Porto, 12 - Santos/SP"
+    }
+  },
+  {
+    "id": 8,
+    "preco": 14750,
+    "prioridade": 2,
+    "etapa": 3,
+    "dataAbertura": "2026-06-10T13:40:00Z",
+    "responsavelEmail": "consultor2@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Serviço",
+    "observacoes": "Reagendamentos recentes por disponibilidade do cliente.",
+    "requisitos": "Checklist operacional a ser preenchido pelo cliente.",
+    "deleted": 0,
+    "agendamentos": [
+      { "status": "Agendada", "dataHora": "2026-06-14T14:00:00Z", "observacoes": "Primeira visita técnica" },
+      { "status": "Reagendada", "dataHora": "2026-06-18T11:00:00Z", "observacoes": "Cliente solicitou nova data" }
+    ],
+    "historico": [
+      { "id": 108, "dataAlteracao": "2026-06-10T13:40:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Energia & Ciclagem",
+      "nomeFantasia": "EnergiaCiclo",
+      "documento": "66.777.888/0001-99",
+      "nomeContato": "Amanda Rocha",
+      "funcaoContato": "Gestora de Projetos",
+      "email": "amanda.rocha@energiaciclagem.com",
+      "telefone": "(19) 91222-3344",
+      "endereco": "Av. das Nações, 88 - Campinas/SP"
+    }
+  },
+  {
+    "id": 9,
+    "preco": 18900,
+    "prioridade": 1,
+    "etapa": 3,
+    "dataAbertura": "2026-06-10T14:00:00Z",
+    "responsavelEmail": "consultor3@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Compra",
+    "observacoes": "Cliente pediu demonstração de processo e referências.",
+    "requisitos": "Referências comerciais e laudo técnico de equipamentos.",
+    "deleted": 0,
+    "agendamentos": [
+      { "status": "Agendada", "dataHora": "2026-06-17T15:00:00Z", "observacoes": "Demonstração operacional com equipe técnica" }
+    ],
+    "historico": [
+      { "id": 109, "dataAlteracao": "2026-06-10T14:00:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Planeta Verde Ind.",
+      "nomeFantasia": "PlanetaVerde",
+      "documento": "77.888.999/0001-11",
+      "nomeContato": "Diego Martins",
+      "funcaoContato": "Supervisor de Meio Ambiente",
+      "email": "diego.martins@planetaverde.com",
+      "telefone": "(27) 98888-7766",
+      "endereco": "Rua do Sol, 70 - Vitória/ES"
+    }
+  },
+  {
+    "id": 10,
+    "preco": 25000,
+    "prioridade": 3,
+    "etapa": 4,
+    "dataAbertura": "2026-06-10T14:15:00Z",
+    "responsavelEmail": "consultor1@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Venda",
+    "observacoes": "Negociação em andamento com solicitação de condições comerciais especiais.",
+    "requisitos": "Prazo de pagamento estendido; proposta revisada enviada.",
+    "deleted": 0,
+    "agendamentos": [
+      { "status": "Realizada", "dataHora": "2026-06-12T10:00:00Z", "observacoes": "Reunião de negociação; condições discutidas" },
+      { "status": "Agendada", "dataHora": "2026-06-20T10:00:00Z", "observacoes": "Follow-up financeiro" }
+    ],
+    "historico": [
+      { "id": 110, "dataAlteracao": "2026-06-10T14:15:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Soluções Ambientais",
+      "nomeFantasia": "SolAmb",
+      "documento": "88.999.000/0001-22",
+      "nomeContato": "Paulo Henrique",
+      "funcaoContato": "Diretor Financeiro",
+      "email": "paulo.henrique@solucoesambientais.com",
+      "telefone": "(11) 94567-1234",
+      "endereco": "Av. das Flores, 230 - São Paulo/SP"
+    }
+  },
+  {
+    "id": 11,
+    "preco": 11400,
+    "prioridade": 2,
+    "etapa": 5,
+    "dataAbertura": "2026-06-10T14:30:00Z",
+    "responsavelEmail": "consultor2@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Serviço",
+    "observacoes": "Proposta enviada; aguardando retorno do comitê técnico.",
+    "requisitos": "Validação de conformidade interna necessária.",
+    "deleted": 0,
+    "agendamentos": [],
+    "historico": [
+      { "id": 111, "dataAlteracao": "2026-06-10T14:30:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "EletroEco Comércio",
+      "nomeFantasia": "EletroEco",
+      "documento": "99.000.111/0001-33",
+      "nomeContato": "Beatriz Carvalho",
+      "funcaoContato": "Analista de Projetos",
+      "email": "beatriz.carvalho@eletroeco.com",
+      "telefone": "(51) 97777-4455",
+      "endereco": "Rua das Acácias, 12 - Porto Alegre/RS"
+    }
+  },
+  {
+    "id": 12,
+    "preco": 16800,
+    "prioridade": 1,
+    "etapa": 6,
+    "dataAbertura": "2026-06-10T14:45:00Z",
+    "responsavelEmail": "consultor3@gruporeciclo.com",
+    "fonte": "Manual",
+    "tipoTag": "Venda",
+    "observacoes": "Contrato fechado; em acompanhamento pós-venda.",
+    "requisitos": "Relatório mensal de volumes e nota fiscal eletrônica requerida.",
+    "deleted": 0,
+    "agendamentos": [
+      { "status": "Realizada", "dataHora": "2026-06-05T09:00:00Z", "observacoes": "Kick-off operacional com equipe do cliente" }
+    ],
+    "historico": [
+      { "id": 112, "dataAlteracao": "2026-06-10T14:45:00Z", "tipoAlteracao": "Criado", "detalhes": "Card inserido no funil" }
+    ],
+    "cliente": {
+      "razaoSocial": "Logística Reversa BR",
+      "nomeFantasia": "LogRev BR",
+      "documento": "11.222.333/0001-44",
+      "nomeContato": "Rafael Souza",
+      "funcaoContato": "Gerente de Contratos",
+      "email": "rafael.souza@logrevbr.com",
+      "telefone": "(61) 98800-3344",
+      "endereco": "Estrada do Comércio, 400 - Brasília/DF"
+    }
+  }
+]

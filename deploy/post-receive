@@ -1,0 +1,18 @@
+#!/bin/bash
+set -e
+
+DEPLOY_DIR="/home/git/crm"
+SERVICE_NAME="frontend"
+BRANCH="main"
+
+while read oldrev newrev refname; do
+    if [ "$refname" = "refs/heads/$BRANCH" ]; then
+        echo ">>> Deploying $SERVICE_NAME ($BRANCH)..."
+        mkdir -p "$DEPLOY_DIR"
+        export GIT_WORK_TREE="$DEPLOY_DIR"
+        git checkout -f "$BRANCH"
+        cd "$DEPLOY_DIR"
+        docker compose up -d --build "$SERVICE_NAME"
+        echo ">>> $SERVICE_NAME deployed successfully"
+    fi
+done
