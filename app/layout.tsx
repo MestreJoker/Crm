@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Reciclo · CRM Comercial",
+  title: "Infinity · CRM Comercial",
   description: "CRM Comercial — Reciclo Inteligência Ambiental",
 };
 
