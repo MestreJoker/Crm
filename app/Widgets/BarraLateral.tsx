@@ -36,11 +36,6 @@ export default function BarraLateral({linkAtual}: BarraLateralProps) {
             href: "/atividades"
         },
         {
-            icon: <FontAwesomeIcon icon={faChartSimple} className="w-full text-xl sm:text-2xl 2xl:text-3xl"/>,
-            texto: "Relatórios",
-            href: "/relatorios"
-        },
-        {
             icon: <FontAwesomeIcon icon={faGear} className="w-full text-xl sm:text-2xl 2xl:text-3xl"/>,
             texto: "Opções",
             href: "/opcoes"
