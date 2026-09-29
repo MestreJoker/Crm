@@ -7,7 +7,7 @@ export default function BotaoAdicionarArquivo(){
         <button 
             type="button"
             className="absolute group ml-67 -mt-2 rounded-xl px-2 py-1 border border-gray-600 text-gray-700
-                       hover:cursor-pointer hover:border-teal hover:text-teal hover:scale-102 transition-all
+                       hover:cursor-pointer hover:border-primary hover:text-primary hover:scale-102 transition-all
                        dark:border-[#96989f] dark:text-[#96989f] dark:hover:bg-[#96989f]"
         >
             <FontAwesomeIcon icon={faPaperclip} className="text-sm"/>

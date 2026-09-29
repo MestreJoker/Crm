@@ -99,7 +99,7 @@ export default function ClientesPage() {
                 )
             case 6:
                 return (
-                    <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100 uppercase tracking-wider text-[0.68rem]">
+                    <span className="px-2.5 py-1 text-xs font-semibold rounded-full bg-primary-soft text-primary-foreground border border-primary-border uppercase tracking-wider text-[0.68rem]">
                         6. Pós-Venda
                     </span>
                 )
@@ -132,7 +132,7 @@ export default function ClientesPage() {
                                 value={query} 
                                 onChange={(e) => setQuery(e.target.value)} 
                                 placeholder="🔍︎ Buscar por empresa ou contato..." 
-                                className="w-full px-3 py-2 text-sm bg-gray-50/50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all placeholder:text-gray-400 dark:bg-[#0f1112] dark:border-[#27292a] dark:placeholder:text-[#7f7f7f] dark:text-white" 
+                                className="w-full px-3 py-2 text-sm bg-gray-50/50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all placeholder:text-gray-400 dark:bg-[#0f1112] dark:border-[#27292a] dark:placeholder:text-[#7f7f7f] dark:text-white"
                             />
                         </div>
                     </div>
@@ -141,7 +141,7 @@ export default function ClientesPage() {
                     <div className="flex-1 overflow-auto mt-6 border border-gray-100 rounded-2xl shadow-sm bg-white [scrollbar-width:thin] dark:bg-[#141617] dark:border-[#27292a]">
                         <table className="min-w-full table-auto border-collapse">
                             <thead>
-                                <tr className="bg-gray-50/70 border-b border-gray-100 text-left text-[0.75rem] font-semibold uppercase tracking-wider sticky text-[#0F7A75] top-0 z-10 dark:bg-transparent dark:border-b dark:border-[#27292a] dark:text-[#7ee3cf]">
+                                <tr className="bg-gray-50/70 border-b border-gray-100 text-left text-[0.75rem] font-semibold uppercase tracking-wider sticky text-primary-foreground top-0 z-10 dark:bg-transparent dark:border-b dark:border-[#27292a]">
                                     <th className="py-4 px-5 whitespace-nowrap">Razão Social</th>
                                     <th className="py-4 px-4 whitespace-nowrap">Nome do Contato</th>
                                     <th className="py-4 px-4 whitespace-nowrap">Função</th>
@@ -165,7 +165,7 @@ export default function ClientesPage() {
                                     const endereco = cliente.endereco || '—'
 
                                     return (
-                                        <tr key={item.id} className="hover:bg-gray-50/80 transition-colors duration-150 group dark:hover:bg-[#0F7A75]/8">
+                                        <tr key={item.id} className="hover:bg-gray-50/80 transition-colors duration-150 group dark:hover:bg-primary-soft">
                                             {/* Razão social destacada em negrito escuro igual ao modelo */}
                                             <td className="py-3.5 px-5 font-bold text-gray-900 text-sm whitespace-nowrap dark:text-white">{razao}</td>
                                             <td className="py-3.5 px-4 text-gray-600 text-sm font-medium whitespace-nowrap dark:text-[#c7c9cc]">{nome}</td>
@@ -182,7 +182,7 @@ export default function ClientesPage() {
                                             <td className="py-3.5 px-4 text-center">
                                                 <button 
                                                     onClick={() => setSelectedCard(item)}
-                                                    className="p-2 text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors dark:text-[#7ee3cf] dark:hover:bg-[#08302a]"
+                                                    className="p-2 text-primary hover:bg-primary-soft rounded-lg transition-colors dark:text-primary-foreground"
                                                     title="Ver Histórico / Detalhes"
                                                 >
                                                     <FontAwesomeIcon icon={faClockRotateLeft} />

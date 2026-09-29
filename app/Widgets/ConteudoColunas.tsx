@@ -501,11 +501,11 @@ export default function ConteudoColunas() {
         let last: boolean = false
         let corTextos = ""
         let iBg = ""
-        if (i == 6) { last = true; corTextos = "text-[#0c5b2a]"; iBg = "bg-[#e1f4e8] dark:bg-[#0c5b2a]" }
+        if (i == 6) { last = true; corTextos = "text-primary-foreground"; iBg = "bg-primary-soft dark:bg-primary" }
         else if (i == 3) { corTextos = "text-[#7d65e9]"; iBg = "bg-[#f2f1fd] dark:bg-[#7d65e9]" }
         else if (i == 2) { corTextos = "text-[#2e86f8]"; iBg = "bg-[#edf4fe] dark:bg-[#2e86f8]" }
         else if (i == 4) { corTextos = "text-[#c96b00]"; iBg = "bg-[#fff4e6] dark:bg-[#c96b00]" }
-        else if (i == 5) { corTextos = "text-[#0f766e]"; iBg = "bg-[#ecfeff] dark:bg-[#0f766e]" }
+        else if (i == 5) { corTextos = "text-primary-foreground"; iBg = "bg-primary-soft dark:bg-primary" }
         else if (i == 1) { corTextos = "text-[#4b5563]"; iBg = "bg-[#f8fafc] dark:bg-[#4b5563]" }
         else { corTextos = "text-[#6667f1]"; iBg = "bg-[#f0effd] dark:bg-[#6667f1]" }
 
@@ -579,7 +579,7 @@ export default function ConteudoColunas() {
                     {showArrows && (
                         <button
                             onClick={() => scrollKanban('left')}
-                            className="flex absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-white/90 shadow-md border border-gray-100 rounded-full w-10 h-10 items-center justify-center text-gray-600 hover:text-[#0F7A75] hover:bg-white active:scale-95 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                            className="flex absolute left-0 top-1/2 -translate-y-1/2 z-30 bg-white/90 shadow-md border border-gray-100 rounded-full w-10 h-10 items-center justify-center text-gray-600 hover:text-primary hover:bg-white active:scale-95 opacity-0 group-hover:opacity-100 transition-all duration-300"
                             aria-label="Rolar para esquerda"
                         >
                             <FontAwesomeIcon icon={faChevronLeft} className="text-base" />
@@ -596,7 +596,7 @@ export default function ConteudoColunas() {
                     {showArrows && (
                         <button
                             onClick={() => scrollKanban('right')}
-                            className="flex absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-white/90 shadow-md border border-gray-100 rounded-full w-10 h-10 items-center justify-center text-gray-600 hover:text-[#0F7A75] hover:bg-white active:scale-95 opacity-0 group-hover:opacity-100 transition-all duration-300"
+                            className="flex absolute right-0 top-1/2 -translate-y-1/2 z-30 bg-white/90 shadow-md border border-gray-100 rounded-full w-10 h-10 items-center justify-center text-gray-600 hover:text-primary hover:bg-white active:scale-95 opacity-0 group-hover:opacity-100 transition-all duration-300"
                             aria-label="Rolar para direita"
                         >
                             <FontAwesomeIcon icon={faChevronRight} className="text-base" />

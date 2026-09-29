@@ -34,7 +34,7 @@ export default function Card(props: PropsCard) {
     const precoFormatado = formatadorMoeda.format(precoNumerico);
 
     let txtPrioridade = "Baixa"
-    let corPrioridade = "bg-emerald-50 text-emerald-700 border-emerald-200 dark:border-[#709f88] dark:bg-[#1f2828] dark:text-[#709f88]"
+    let corPrioridade = "bg-slate-100 text-slate-700 border-slate-200 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-300"
 
     if (props.prioridade === 3) {
         txtPrioridade = "Alta"
@@ -90,8 +90,8 @@ export default function Card(props: PropsCard) {
 
                 {/* Corpo: Identificação do Lead */}
                 <div className="flex flex-col gap-0.5">
-                    <h4 className="text-sm font-bold text-gray-800 tracking-tight leading-snug truncate group-hover/card:text-[#0F7A75] transition-colors
-                    dark:text-white dark:group-hover/card:text-[#6a9a7d]">
+                    <h4 className="text-sm font-bold text-gray-800 tracking-tight leading-snug truncate group-hover/card:text-primary transition-colors
+                    dark:text-white dark:group-hover/card:text-primary-foreground">
                         {props.empresa || "Empresa não informada"}
                     </h4>
                     <p className="text-xs text-gray-500 font-medium truncate">
@@ -114,7 +114,7 @@ export default function Card(props: PropsCard) {
                         {props.etapa === 6 ? (
                             <button
                                 onClick={handleStartNovoCicloClick}
-                                className="p-1 text-[10px] font-extrabold bg-[#e1f4e8] hover:bg-[#cbeed4] text-[#0c5b2a] border border-[#bce7cb] rounded-lg transition-all active:scale-95"
+                                className="p-1 text-[10px] font-extrabold bg-primary-soft hover:bg-primary-soft-hover text-primary-foreground border border-primary-border rounded-lg transition-all active:scale-95"
                             >
                                 Iniciar Novo Ciclo
                             </button>
@@ -122,7 +122,7 @@ export default function Card(props: PropsCard) {
                             props.moveRight && (
                                 <button
                                     onClick={handleMoveRightClick}
-                                    className="w-7 h-7 flex items-center justify-center bg-gray-50 hover:bg-[#ecfeff] text-gray-400 hover:text-[#0F7A75] border border-gray-100 hover:border-[#a7f0e8] rounded-lg transition-all active:scale-95
+                                    className="w-7 h-7 flex items-center justify-center bg-gray-50 hover:bg-primary-soft text-gray-400 hover:text-primary border border-gray-100 hover:border-primary-border rounded-lg transition-all active:scale-95
                                     dark:bg-transparent dark:border-gray-500 dark:hover:bg-[white] dark:hover:border-none dark:hover:text-[#1d2124] hover:cursor-pointer"
                                     title="Avançar etapa"
                                 >

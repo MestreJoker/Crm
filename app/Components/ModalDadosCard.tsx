@@ -101,7 +101,7 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                     </div>
                     <div className="flex items-center gap-4">
                             <h2 className="text-xl font-bold dark:text-white">{cardData.cliente?.razaoSocial || "Não informado"}</h2>
-                        <div className="px-2 py-1 rounded-full text-[#0B5C58] bg-[#ECFDF5] text-sm font-bold">{cardData.tipoTag || "Serviço"}</div>
+                        <div className="px-2 py-1 rounded-full text-primary-foreground bg-primary-soft text-sm font-bold">{cardData.tipoTag || "Serviço"}</div>
                     </div>
                 </div>
 
@@ -109,14 +109,14 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                 <div className="flex gap-4 border-b border-gray-100 mt-4 mb-6">
                     <button 
                         onClick={() => setTabAtiva('dados')}
-                        className={`pb-2 px-1 text-sm font-bold transition-all ${tabAtiva === 'dados' ? 'text-[#0F7A75] border-b-2 border-[#0F7A75]' : 'text-gray-400 hover:text-gray-600'}`}
+                        className={`pb-2 px-1 text-sm font-bold transition-all ${tabAtiva === 'dados' ? 'text-primary border-b-2 border-primary' : 'text-gray-400 hover:text-gray-600'}`}
                     >
                         <FontAwesomeIcon icon={faUser} className="mr-2" />
                         Dados do Cliente
                     </button>
                     <button 
                         onClick={() => setTabAtiva('historico')}
-                        className={`pb-2 px-1 text-sm font-bold transition-all ${tabAtiva === 'historico' ? 'text-[#0F7A75] border-b-2 border-[#0F7A75]' : 'text-gray-400 hover:text-gray-600'}`}
+                        className={`pb-2 px-1 text-sm font-bold transition-all ${tabAtiva === 'historico' ? 'text-primary border-b-2 border-primary' : 'text-gray-400 hover:text-gray-600'}`}
                     >
                         <FontAwesomeIcon icon={faClockRotateLeft} className="mr-2" />
                         Linha do Tempo
@@ -126,10 +126,10 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                 {tabAtiva === 'dados' ? (
                     <>
                         {/* Valores */}
-                        <div className="min-[788px]:flex w-full rounded-lg border border-gray-200 bg-gray-50 p-5 justify-evenly dark:bg-[#172623] dark:border-[#27292a]">
+                        <div className="min-[788px]:flex w-full rounded-lg border border-gray-200 bg-gray-50 p-5 justify-evenly dark:bg-primary-soft dark:border-[#27292a]">
                             <div className="text-center">
                                 <p className="text-xs text-gray-500">VALOR ESTIMADO</p>
-                                <p className="text-[#0F7A75] text-2xl font-bold">R$ {precoFormatado}</p>
+                                <p className="text-primary text-2xl font-bold">R$ {precoFormatado}</p>
                             </div>
                             <div className="text-center justify-evenly">
                                 <p className="text-xs text-gray-500">PRIORIDADE</p>
@@ -138,7 +138,7 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                                 ) : cardData.prioridade === 2 ? (
                                     <p className="text-sm font-bold px-2 py-1 rounded-full text-amber-600 bg-amber-100">🟡 Média prioridade</p>
                                 ) : (
-                                    <p className="text-sm font-bold px-2 py-1 rounded-full text-[#0B5C58] bg-[#ECFDF5]">🟢 Baixa prioridade</p>
+                                    <p className="text-sm font-bold px-2 py-1 rounded-full text-slate-700 bg-slate-100 dark:text-slate-300 dark:bg-slate-800">Baixa prioridade</p>
                                 )}
                             </div>
                             <div className="text-center flex flex-col justify-evenly">
@@ -147,8 +147,7 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                                     <p className="text-sm">{cardData.responsavelEmail || "Sem responsável"}</p>
                                     <FontAwesomeIcon 
                                         icon={faCopy} 
-                                        style={{ color: "#0B5C58", }} 
-                                        className="hover:cursor-pointer hover:scale-103" 
+                                        className="text-primary hover:cursor-pointer hover:scale-103"
                                         onClick={() => {
                                             if (cardData.responsavelEmail) {
                                                 navigator.clipboard.writeText(cardData.responsavelEmail);
@@ -178,10 +177,10 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                         {/* Requisitos e observações */}
                         <div className="flex flex-col gap-3 my-5">
                             {/* Requisitos */}
-                            <div className="p-5 border border-gray-200 rounded-lg bg-[#f7faf8]">
+                            <div className="p-5 border border-gray-200 rounded-lg bg-gray-50 dark:bg-primary-soft">
                                 <div className="flex gap-2 items-center">
-                                    <FontAwesomeIcon icon={faFileLines} style={{color: "#0B5C58",}} />
-                                    <p className="text-[#0B5C58] font-bold">Requisitos do projeto</p>
+                                    <FontAwesomeIcon icon={faFileLines} className="text-primary" />
+                                    <p className="text-primary font-bold">Requisitos do projeto</p>
                                 </div>
                                 <p className="mt-1 text-sm">{cardData.requisitos || "Nenhum requisito informado"}</p>
                             </div>
@@ -189,7 +188,7 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                             {/* Observações */}
                             <div className="p-5 border border-[#f2d9a7] rounded-lg bg-[#fefbf7]">
                                 <div className="flex gap-2 items-center">
-                                    <FontAwesomeIcon icon={faFileLines} style={{color: "#c27521",}} />
+                                    <FontAwesomeIcon icon={faFileLines} className="text-amber-700" />
                                     <p className="text-[#c27521] font-bold">Observações</p>
                                 </div>
                                 <p className="mt-1 text-sm">{cardData.observacoes || "Nenhuma observação informada"}</p>
@@ -209,7 +208,7 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
 
                                     {cardData.etapa === 4 && (
                                         jaValidado ? (
-                                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-[#0B5C58] bg-[#ECFDF5] border border-[#a7f0e8] text-sm">
+                                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-lg font-bold text-primary-foreground bg-primary-soft border border-primary-border text-sm">
                                                 <FontAwesomeIcon icon={faCheckCircle} />
                                                 ✓ Negociação Validada
                                             </div>
@@ -226,7 +225,7 @@ export default function ModalDadosCard({ onClose, cardData, onUpdateCard }: Moda
                                     {cardData.etapa === 6 && (
                                         <button
                                             onClick={abrirPosVenda}
-                                            className="bg-[#0F7A75] hover:bg-[#0B5C58] text-white font-bold px-4 py-2 rounded-lg transition-all text-sm active:scale-95 shadow-sm"
+                                            className="bg-primary hover:bg-primary-hover text-white font-bold px-4 py-2 rounded-lg transition-all text-sm active:scale-95 shadow-sm"
                                         >
                                             Iniciar Pós-Venda
                                         </button>

@@ -2,30 +2,41 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #F4F6F5;
-  --foreground: #1f2d2b;
-  --teal: #0F7A75;
-  --teal-dark: #0B5C58;
-  --ink: #16211F;
-  --paper: #F4F6F5;
-  --cyan: #23B5C0;
-  --green: #5DBE52;
-  --blue: #4E84D6;
-  --purple: #7C50B8;
+  --background: #F4F6F8;
+  --foreground: #1e293b;
+  --primary: #2563EB;
+  --primary-hover: #1D4ED8;
+  --primary-soft: #EFF6FF;
+  --primary-soft-hover: #DBEAFE;
+  --primary-foreground: #1E40AF;
+  --primary-border: #BFDBFE;
+  --ink: #0F172A;
+  --paper: #F4F6F8;
+  --cyan: #38BDF8;
+  --blue: #3B82F6;
   --line: #e2e8f0;
   --slate: #475569;
   --slate-light: #94a3b8;
 }
 
 .dark {
-  --teal: #1c322c
+  --primary: #3B82F6;
+  --primary-hover: #2563EB;
+  --primary-soft: #172554;
+  --primary-soft-hover: #1E3A8A;
+  --primary-foreground: #BFDBFE;
+  --primary-border: #1E40AF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --color-teal: var(--teal);
-  --color-teal-dark: var(--teal-dark);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-soft: var(--primary-soft);
+  --color-primary-soft-hover: var(--primary-soft-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-border: var(--primary-border);
   --color-ink: var(--ink);
   --color-paper: var(--paper);
   --color-cyan: var(--cyan);
@@ -36,6 +47,6 @@
 body {
   background-color: var(--paper);
   color: var(--foreground);
-  @apply dark:bg-[#191b1d] dark:text-[#FAFAFA] dark:border-[#27292a];
+  @apply dark:bg-[#111827] dark:text-[#FAFAFA] dark:border-[#1F2937];
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }

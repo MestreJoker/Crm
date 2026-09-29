@@ -65,10 +65,10 @@ export default function BarraLateral({linkAtual}: BarraLateralProps) {
 
 
             <div className="hidden lg:flex items-end justify-center pb-6 flex-1 mt-4">
-                <div className="flex items-center justify-center gap-2 text-gray-500 hover:text-teal
+                <div className="flex items-center justify-center gap-2 text-gray-500 hover:text-primary
                 cursor-pointer text-xslg:text-sm
-                py-1 px-3 rounded-full hover:bg-[#e9f3e9] transition-all duration-450
-                dark:hover:bg-teal dark:hover:text-white">
+                py-1 px-3 rounded-full hover:bg-primary-soft transition-all duration-450
+                dark:hover:bg-primary-soft dark:hover:text-white">
                     <FontAwesomeIcon icon={faCircleQuestion}/>
                     <p className="text-xs 2xl:text-base">Ajuda</p>
                 </div>

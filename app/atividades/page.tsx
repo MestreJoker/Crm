@@ -204,7 +204,7 @@ export default function AtividadesPage() {
                     {/* Cabeçalho de Atividades */}
                     <div className="w-full max-w-[700px] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-0 shrink-0">
                         <div className="flex gap-4 items-center">
-                            <div className="bg-teal p-2.5 2xl:p-3 w-fit rounded-lg 2xl:rounded-xl shadow-md shrink-0">
+                            <div className="bg-primary p-2.5 2xl:p-3 w-fit rounded-lg 2xl:rounded-xl shadow-md shrink-0">
                                 <FontAwesomeIcon icon={faCalendarDays} className="text-white 2xl:text-xl" />
                             </div>
                             <div className="flex flex-col">
@@ -248,11 +248,11 @@ export default function AtividadesPage() {
                                         className={`
                                             min-h-[65px] lg:min-h-[55px] 2xl:min-h-[65px] p-1.5 rounded-lg 2xl:rounded-xl border flex flex-col justify-between transition-all select-none relative
                                             ${item.mesAlvo === 'atual' ? 'bg-white border-gray-50 text-gray-800 dark:bg-transparent dark:border-[#27292a] dark:text-white' : 'bg-gray-50/50 border-gray-50/20 text-gray-300 dark:bg-transparent dark:border-transparent dark:text-[#6b6f74]'}
-                                            ${temAtividades ? 'hover:bg-[#0F7A75]/5 hover:border-[#0F7A75]/20 hover:shadow-sm cursor-pointer dark:hover:bg-[#0F7A75]/10 dark:hover:border-[#0F7A75]/20' : 'cursor-default'}
-                                            ${isHoje ? 'ring-2 ring-[#0F7A75] ring-offset-1 font-bold' : ''}
+                                            ${temAtividades ? 'hover:bg-primary-soft hover:border-primary-border hover:shadow-sm cursor-pointer' : 'cursor-default'}
+                                            ${isHoje ? 'ring-2 ring-primary ring-offset-1 font-bold' : ''}
                                         `}
                                     >
-                                        <span className={`text-[0.75rem] ${isHoje ? 'text-[#0F7A75] dark:text-[#7ee3cf]' : 'dark:text-[#c7c9cc]'}`}>
+                                        <span className={`text-[0.75rem] ${isHoje ? 'text-primary-foreground' : 'dark:text-[#c7c9cc]'}`}>
                                             {item.dia}
                                         </span>
 
@@ -286,7 +286,7 @@ export default function AtividadesPage() {
                         
                         <div className="flex justify-between items-center border-b border-gray-100 pb-3 dark:border-[#27292a]">
                             <div className="flex gap-3 items-center text-gray-800 dark:text-white">
-                                <FontAwesomeIcon icon={faCalendarDays} className="text-[#0F7A75]" />
+                                <FontAwesomeIcon icon={faCalendarDays} className="text-primary" />
                                 <h4 className="font-bold text-base">
                                     Compromissos para {new Date(diaSelecionado + 'T00:00:00').toLocaleDateString('pt-BR')}
                                 </h4>

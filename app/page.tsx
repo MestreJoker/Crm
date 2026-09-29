@@ -26,7 +26,7 @@ export default function Home() {
           {/* Menu superior */}
           <div className="flex flex-row justify-between items-center gap-4 shrink-0 w-full overflow-hidden px-1 py-1.5 flex-wrap">
             <div className="hidden md:flex gap-3 lg:gap-4 items-center min-w-0">
-              <div className="bg-teal p-2 2xl:p-3 w-fit rounded-lg 2xl:rounded-xl shadow-md shrink-0">
+              <div className="bg-primary p-2 2xl:p-3 w-fit rounded-lg 2xl:rounded-xl shadow-md shrink-0">
                 <FontAwesomeIcon icon={faFilter} className="text-white text-sm lg:text-lg 2xl:text-xl" />
               </div>
               <div className="flex flex-col min-w-0">
@@ -40,7 +40,7 @@ export default function Home() {
             <div className="w-full md:w-fit flex gap-3 items-center justify-center">
               
 
-              <div className="rounded-lg border-2 2xl:border-3 border-teal px-4 text-[#0F7A75]">
+              <div className="rounded-lg border-2 2xl:border-3 border-primary px-4 text-primary-foreground">
                 <p className="text-xs 2xl:text-sm">Ganho:</p>
                 <p className="-mt-1 2xl:-mt-1.5 text-sm lg:text-md 2xl:text-xl font-bold">R$12.000,00</p>
               </div>

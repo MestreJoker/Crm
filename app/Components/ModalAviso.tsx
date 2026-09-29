@@ -34,7 +34,7 @@ export default function ModalAviso({ isOpen, onClose, titulo, mensagem, tipo = '
       bg: 'bg-amber-50 text-amber-600', 
       ring: 'ring-amber-100', 
       icon: faTriangleExclamation,
-      btn: 'bg-[#0F7A75] hover:opacity-90 focus:ring-emerald-500/20' // Mantém o verde padrão para avisos comuns de validação
+      btn: 'bg-primary hover:bg-primary-hover focus:ring-primary/20'
     }
   } as const
 

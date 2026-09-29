@@ -228,12 +228,12 @@ export default function Modal({ onClose, etapaCard }: ModalProps) {
                 </div>
 
                 <div className="flex items-center gap-3 border-b border-gray-100 pb-3 shrink-0 dark:border-[#27292a]">
-                    <FontAwesomeIcon icon={faUserPlus} className="text-xl text-[#0F7A75]" />
+                    <FontAwesomeIcon icon={faUserPlus} className="text-xl text-primary" />
                     <h2 className="text-xl font-bold text-zinc-800 dark:text-white">Adicionar Novo Card ao CRM</h2>
                 </div>
 
                 <section className="grid grid-cols-1 sm:grid-cols-2 gap-4 py-4 text-zinc-700 dark:text-white">
-                    <div className="sm:col-span-2 bg-gray-50/60 p-3 rounded-xl border border-gray-100/80 flex items-center gap-2 mb-1 dark:bg-[#172623] dark:border-[#27292a]">
+                    <div className="sm:col-span-2 bg-gray-50/60 p-3 rounded-xl border border-gray-100/80 flex items-center gap-2 mb-1 dark:bg-primary-soft dark:border-[#27292a]">
                         <FontAwesomeIcon icon={faLayerGroup} className="text-gray-400 text-sm" />
                         <h3 className="text-xs font-bold uppercase tracking-wider text-gray-500">Informações Comerciais</h3>
                     </div>
@@ -271,11 +271,11 @@ export default function Modal({ onClose, etapaCard }: ModalProps) {
                             Tags de Classificação
                         </label>
                         
-                        <div className="w-full p-2 border border-gray-200 rounded-xl bg-white flex flex-wrap gap-2 items-center focus-within:ring-2 focus-within:ring-[#0F7A75]/10 focus-within:border-[#0F7A75] transition-all">
+                        <div className="w-full p-2 border border-gray-200 rounded-xl bg-white flex flex-wrap gap-2 items-center focus-within:ring-2 focus-within:ring-primary/10 focus-within:border-primary transition-all">
                             {listaTagsCard.map((tag) => (
-                                <span key={tag} className="inline-flex items-center gap-1.5 bg-[#ECFDF5] text-[#0B5C58] border border-[#a7f0e8] text-xs font-semibold px-2.5 py-1 rounded-lg transition-all">
+                                <span key={tag} className="inline-flex items-center gap-1.5 bg-primary-soft text-primary-foreground border border-primary-border text-xs font-semibold px-2.5 py-1 rounded-lg transition-all">
                                     {tag}
-                                    <button type="button" onClick={() => removerTag(tag)} className="text-[#0F7A75] hover:text-[#0B5C58] font-bold transition-colors">
+                                    <button type="button" onClick={() => removerTag(tag)} className="text-primary hover:text-primary-hover font-bold transition-colors">
                                         <FontAwesomeIcon icon={faX} className="w-2 h-2" />
                                     </button>
                                 </span>

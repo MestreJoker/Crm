@@ -66,8 +66,7 @@ export default function Opcoes(){
                             {configs.map((item, index) => {
                                 if (index == 0) {
                                     return (
-                                        <div key={index} className="w-full p-3 rounded-lg flex gap-2  bg-[#e9f3e9] text-[#0F7A75]
-                                        dark:bg-[#172623]">
+                                        <div key={index} className="w-full p-3 rounded-lg flex gap-2 bg-primary-soft text-primary-foreground">
                                             {item.icone}
                                             <div>
                                                 <p className="font-bold dark:text-white">{item.titulo}</p>
@@ -84,7 +83,7 @@ export default function Opcoes(){
                             dark:border-2 dark:border-[#27292a]">
                                 {/*Topo da div de aparência */}
                                 <div className="flex gap-3">
-                                    <FontAwesomeIcon icon={faDisplay} style={{color: "#0F7A75",}} className="text-xl"/>
+                                    <FontAwesomeIcon icon={faDisplay} className="text-xl text-primary"/>
                                     <div className="-mt-1">
                                         <p className="font-bold">Aparência</p>
                                         <p className="text-sm text-gray-500 -mt-0.5 dark:text-[#96989f]">Personalize o tema da interface do sistema</p>
@@ -104,8 +103,8 @@ export default function Opcoes(){
                                             let estilo = "border-gray-200 dark:border-[#27292a]"
                                             let backgroundSelecionado = ""
                                             if (index == temaAtual) {
-                                                estilo = "border-[#0F7A75] text-[#0F7A75] bg-[#fafdfc] dark:bg-[#17201f]"
-                                                backgroundSelecionado = "bg-[#0F7A75]"
+                                                estilo = "border-primary text-primary-foreground bg-primary-soft dark:bg-primary-soft"
+                                                backgroundSelecionado = "bg-primary"
                                             }
                                             return(
                                                 <div key={index} className={`rounded-lg p-4 flex items-center justify-between w-50 border-2 ${estilo}

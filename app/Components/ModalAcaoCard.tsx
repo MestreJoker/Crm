@@ -426,8 +426,8 @@ export default function ModalAcaoCard({ isOpen, tipoAcao, card, onClose, onSave 
           titulo: 'Iniciar Novo Ciclo de Vendas',
           subtitulo: 'Finalize este ciclo atual e reinicie o card na etapa de triagem.',
           icone: faCalendarDays,
-          corIcone: 'bg-[#ECFDF5] text-[#0B5C58] ring-[#a7f0e8]',
-          btnCor: 'bg-[#0F7A75] hover:bg-[#0B5C58] focus:ring-[#0F7A75]/20',
+          corIcone: 'bg-primary-soft text-primary-foreground ring-primary-border',
+          btnCor: 'bg-primary hover:bg-primary-hover focus:ring-primary/20',
           campos: (
             <div className="flex flex-col gap-1">
               <label className="text-xs font-bold text-gray-700">Observações do Ciclo Finalizado</label>
@@ -435,7 +435,7 @@ export default function ModalAcaoCard({ isOpen, tipoAcao, card, onClose, onSave 
                 placeholder="Registre as notas conclusivas sobre o ciclo de vendas que se encerra..."
                 value={observacoesCiclo}
                 onChange={(e) => setObservacoesCiclo(e.target.value)}
-                className="w-full rounded-xl border border-gray-300 p-2.5 text-sm h-20 resize-none focus:outline-none focus:border-green-500"
+                className="w-full rounded-xl border border-gray-300 p-2.5 text-sm h-20 resize-none focus:outline-none focus:border-primary"
               />
               <p className="text-xs text-gray-500 mt-1">O card retornará para 'Aguardando 1º contato' mantendo o histórico preservado.</p>
             </div>

@@ -51,7 +51,7 @@ export default function Timeline({ card }: TimelineProps) {
         if (type === 'negociacao_validada') return 'text-emerald-500';
         if (type === 'negociacao_recusada') return 'text-red-500';
         if (type.startsWith('agendamento')) return 'text-purple-500';
-        if (type === 'Criado') return 'text-green-500';
+        if (type === 'Criado') return 'text-primary';
         return 'text-gray-400';
     };
 

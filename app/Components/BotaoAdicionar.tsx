@@ -12,8 +12,8 @@ interface PropsBotaoAdicionar {
 
 export default function BotaoAdicionar(props: PropsBotaoAdicionar){
     return(
-        <button onClick={props.onClick} className={`${props.py} ${props.px} bg-teal rounded-lg font-bold text-white flex items-center gap-3
-              hover:bg-[#16211F] hover:scale-102  hover:cursor-pointer transition-all duration-300 ${props.outrosEstilos}`}>
+          <button onClick={props.onClick} className={`${props.py} ${props.px} bg-primary rounded-lg font-bold text-white flex items-center gap-3
+              hover:bg-primary-hover hover:scale-102  hover:cursor-pointer transition-all duration-300 ${props.outrosEstilos}`}>
                 <FontAwesomeIcon icon={faPlus} />
                 <p className={`${props.tamanhoTexto}`}>{props.textoBotao}</p>
               </button>

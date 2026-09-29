@@ -24,11 +24,11 @@ export default function Coluna(props: PropsColuna) {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false)
     let conteudoTopo = <></>
     let corLast = "bg-[#fdfdfe]"
-    let corBotao = "border-[#938efc] bg-[#f8f8fe] text-[#938efc]"
+    let corBotao = "border-primary-border bg-primary-soft text-primary-foreground"
 
     if (props.isLast) {
-        corLast = "bg-[#00adbd0e]"
-        corBotao = "border-[#143f25] text-[#143f25] hover:bg-[#e1f4e8]"
+        corLast = "bg-primary-soft/40"
+        corBotao = "border-primary text-primary-foreground hover:bg-primary-soft-hover"
     }
     if (props.etapa == 1){
         conteudoTopo = <div onClick={() => setIsModalOpen(true)} className="shrink-0">
@@ -62,7 +62,7 @@ export default function Coluna(props: PropsColuna) {
                 [&::-webkit-scrollbar-thumb]:bg-zinc-200
                 [&::-webkit-scrollbar-thumb]:rounded-full
                 hover:[&::-webkit-scrollbar-thumb]:bg-zinc-300
-                transition-colors duration-300 ${props.isDraggingOver ? 'ring-2 ring-dashed ring-[#0F7A75]/30' : ''}`}
+                transition-colors duration-300 ${props.isDraggingOver ? 'ring-2 ring-dashed ring-primary/30' : ''}`}
                 >
                     {props.children}
                 </div>
